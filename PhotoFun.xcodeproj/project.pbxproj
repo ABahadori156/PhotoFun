@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		35E4B3571D56974F00086FB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E4B3561D56974F00086FB3 /* main.m */; };
 		35E4B35A1D56974F00086FB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E4B3591D56974F00086FB3 /* AppDelegate.m */; };
-		35E4B35D1D56974F00086FB3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E4B35C1D56974F00086FB3 /* ViewController.m */; };
 		35E4B3601D56974F00086FB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E4B35E1D56974F00086FB3 /* Main.storyboard */; };
 		35E4B3621D56974F00086FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35E4B3611D56974F00086FB3 /* Assets.xcassets */; };
 		35E4B3651D56974F00086FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E4B3631D56974F00086FB3 /* LaunchScreen.storyboard */; };
 		35E4B3701D56974F00086FB3 /* PhotoFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E4B36F1D56974F00086FB3 /* PhotoFunTests.m */; };
 		35E4B37B1D56974F00086FB3 /* PhotoFunUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E4B37A1D56974F00086FB3 /* PhotoFunUITests.m */; };
+		35E4B38A1D56989100086FB3 /* TPPCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E4B3891D56989100086FB3 /* TPPCollectionViewController.m */; };
+		35E4B38D1D56A7D900086FB3 /* TPPUICollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E4B38C1D56A7D900086FB3 /* TPPUICollectionViewCell.m */; };
+		51AB97AAA5E4076954EB3CFC /* Pods_PhotoFunTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3628870B77FDB42FC2BA01B2 /* Pods_PhotoFunTests.framework */; };
+		60A0F38FA583ECB67D7A2593 /* Pods_PhotoFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE31144F0D1B76C4B013BF1 /* Pods_PhotoFun.framework */; };
+		CABCF5449844A86AB5FA3655 /* Pods_PhotoFunUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CABBDE65C6B27A962CF29FC1 /* Pods_PhotoFunUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00508BD65D2A0B3F6C1E19E5 /* Pods-PhotoFun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoFun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoFun/Pods-PhotoFun.debug.xcconfig"; sourceTree = "<group>"; };
+		2FC367C3855E48F921938F44 /* Pods-PhotoFunUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoFunUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoFunUITests/Pods-PhotoFunUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3109959CFCF99BEE15B38ECC /* Pods-PhotoFunTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoFunTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoFunTests/Pods-PhotoFunTests.debug.xcconfig"; sourceTree = "<group>"; };
 		35E4B3521D56974F00086FB3 /* PhotoFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E4B3561D56974F00086FB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35E4B3581D56974F00086FB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		35E4B3591D56974F00086FB3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		35E4B35B1D56974F00086FB3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		35E4B35C1D56974F00086FB3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		35E4B35F1D56974F00086FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35E4B3611D56974F00086FB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35E4B3641D56974F00086FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +56,16 @@
 		35E4B3761D56974F00086FB3 /* PhotoFunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoFunUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E4B37A1D56974F00086FB3 /* PhotoFunUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoFunUITests.m; sourceTree = "<group>"; };
 		35E4B37C1D56974F00086FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35E4B3881D56989100086FB3 /* TPPCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPPCollectionViewController.h; sourceTree = "<group>"; };
+		35E4B3891D56989100086FB3 /* TPPCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPPCollectionViewController.m; sourceTree = "<group>"; };
+		35E4B38B1D56A7D900086FB3 /* TPPUICollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPPUICollectionViewCell.h; sourceTree = "<group>"; };
+		35E4B38C1D56A7D900086FB3 /* TPPUICollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPPUICollectionViewCell.m; sourceTree = "<group>"; };
+		3628870B77FDB42FC2BA01B2 /* Pods_PhotoFunTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoFunTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA28630B728108900167144 /* Pods-PhotoFunUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoFunUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoFunUITests/Pods-PhotoFunUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BFF5353F7B4EB33A74767A9D /* Pods-PhotoFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoFun.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoFun/Pods-PhotoFun.release.xcconfig"; sourceTree = "<group>"; };
+		CABBDE65C6B27A962CF29FC1 /* Pods_PhotoFunUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoFunUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA9A951E166DE989D5B8C95A /* Pods-PhotoFunTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoFunTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoFunTests/Pods-PhotoFunTests.release.xcconfig"; sourceTree = "<group>"; };
+		EBE31144F0D1B76C4B013BF1 /* Pods_PhotoFun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoFun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60A0F38FA583ECB67D7A2593 /* Pods_PhotoFun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51AB97AAA5E4076954EB3CFC /* Pods_PhotoFunTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CABCF5449844A86AB5FA3655 /* Pods_PhotoFunUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +103,8 @@
 				35E4B36E1D56974F00086FB3 /* PhotoFunTests */,
 				35E4B3791D56974F00086FB3 /* PhotoFunUITests */,
 				35E4B3531D56974F00086FB3 /* Products */,
+				E1ED7A391BA6DFB9BBD5E47E /* Pods */,
+				C0242C061088C060BBDFC488 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +123,11 @@
 			children = (
 				35E4B3581D56974F00086FB3 /* AppDelegate.h */,
 				35E4B3591D56974F00086FB3 /* AppDelegate.m */,
-				35E4B35B1D56974F00086FB3 /* ViewController.h */,
-				35E4B35C1D56974F00086FB3 /* ViewController.m */,
+				35E4B3881D56989100086FB3 /* TPPCollectionViewController.h */,
+				35E4B3891D56989100086FB3 /* TPPCollectionViewController.m */,
 				35E4B35E1D56974F00086FB3 /* Main.storyboard */,
+				35E4B38B1D56A7D900086FB3 /* TPPUICollectionViewCell.h */,
+				35E4B38C1D56A7D900086FB3 /* TPPUICollectionViewCell.m */,
 				35E4B3611D56974F00086FB3 /* Assets.xcassets */,
 				35E4B3631D56974F00086FB3 /* LaunchScreen.storyboard */,
 				35E4B3661D56974F00086FB3 /* Info.plist */,
@@ -140,6 +162,29 @@
 			path = PhotoFunUITests;
 			sourceTree = "<group>";
 		};
+		C0242C061088C060BBDFC488 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBE31144F0D1B76C4B013BF1 /* Pods_PhotoFun.framework */,
+				3628870B77FDB42FC2BA01B2 /* Pods_PhotoFunTests.framework */,
+				CABBDE65C6B27A962CF29FC1 /* Pods_PhotoFunUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1ED7A391BA6DFB9BBD5E47E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00508BD65D2A0B3F6C1E19E5 /* Pods-PhotoFun.debug.xcconfig */,
+				BFF5353F7B4EB33A74767A9D /* Pods-PhotoFun.release.xcconfig */,
+				3109959CFCF99BEE15B38ECC /* Pods-PhotoFunTests.debug.xcconfig */,
+				EA9A951E166DE989D5B8C95A /* Pods-PhotoFunTests.release.xcconfig */,
+				2FC367C3855E48F921938F44 /* Pods-PhotoFunUITests.debug.xcconfig */,
+				9DA28630B728108900167144 /* Pods-PhotoFunUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35E4B37F1D56974F00086FB3 /* Build configuration list for PBXNativeTarget "PhotoFun" */;
 			buildPhases = (
+				A81B27A52B0A880EC6B11197 /* [CP] Check Pods Manifest.lock */,
 				35E4B34E1D56974F00086FB3 /* Sources */,
 				35E4B34F1D56974F00086FB3 /* Frameworks */,
 				35E4B3501D56974F00086FB3 /* Resources */,
+				79388077905D75DCFD305806 /* [CP] Embed Pods Frameworks */,
+				5F28A1E4E923C5FE12E43A39 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35E4B3821D56974F00086FB3 /* Build configuration list for PBXNativeTarget "PhotoFunTests" */;
 			buildPhases = (
+				C98682FD951E43765F15E86E /* [CP] Check Pods Manifest.lock */,
 				35E4B3671D56974F00086FB3 /* Sources */,
 				35E4B3681D56974F00086FB3 /* Frameworks */,
 				35E4B3691D56974F00086FB3 /* Resources */,
+				71B5AA59262AD92C99679C4B /* [CP] Embed Pods Frameworks */,
+				21E0265C6FFCD72C3F9C6D2A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35E4B3851D56974F00086FB3 /* Build configuration list for PBXNativeTarget "PhotoFunUITests" */;
 			buildPhases = (
+				62DD27AF3191D150EF47685E /* [CP] Check Pods Manifest.lock */,
 				35E4B3721D56974F00086FB3 /* Sources */,
 				35E4B3731D56974F00086FB3 /* Frameworks */,
 				35E4B3741D56974F00086FB3 /* Resources */,
+				02C737E2B1AA191A30BC7CFE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,12 +321,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02C737E2B1AA191A30BC7CFE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoFunUITests/Pods-PhotoFunUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21E0265C6FFCD72C3F9C6D2A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoFunTests/Pods-PhotoFunTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F28A1E4E923C5FE12E43A39 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoFun/Pods-PhotoFun-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62DD27AF3191D150EF47685E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		71B5AA59262AD92C99679C4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoFunTests/Pods-PhotoFunTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79388077905D75DCFD305806 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoFun/Pods-PhotoFun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A81B27A52B0A880EC6B11197 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C98682FD951E43765F15E86E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		35E4B34E1D56974F00086FB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35E4B35D1D56974F00086FB3 /* ViewController.m in Sources */,
+				35E4B38A1D56989100086FB3 /* TPPCollectionViewController.m in Sources */,
+				35E4B38D1D56A7D900086FB3 /* TPPUICollectionViewCell.m in Sources */,
 				35E4B35A1D56974F00086FB3 /* AppDelegate.m in Sources */,
 				35E4B3571D56974F00086FB3 /* main.m in Sources */,
 			);
@@ -414,6 +591,7 @@
 		};
 		35E4B3801D56974F00086FB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00508BD65D2A0B3F6C1E19E5 /* Pods-PhotoFun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PhotoFun/Info.plist;
@@ -425,6 +603,7 @@
 		};
 		35E4B3811D56974F00086FB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF5353F7B4EB33A74767A9D /* Pods-PhotoFun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PhotoFun/Info.plist;
@@ -436,6 +615,7 @@
 		};
 		35E4B3831D56974F00086FB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3109959CFCF99BEE15B38ECC /* Pods-PhotoFunTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PhotoFunTests/Info.plist;
@@ -448,6 +628,7 @@
 		};
 		35E4B3841D56974F00086FB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA9A951E166DE989D5B8C95A /* Pods-PhotoFunTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PhotoFunTests/Info.plist;
@@ -460,6 +641,7 @@
 		};
 		35E4B3861D56974F00086FB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FC367C3855E48F921938F44 /* Pods-PhotoFunUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = PhotoFunUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -471,6 +653,7 @@
 		};
 		35E4B3871D56974F00086FB3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DA28630B728108900167144 /* Pods-PhotoFunUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = PhotoFunUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -499,6 +682,7 @@
 				35E4B3811D56974F00086FB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35E4B3821D56974F00086FB3 /* Build configuration list for PBXNativeTarget "PhotoFunTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +691,7 @@
 				35E4B3841D56974F00086FB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35E4B3851D56974F00086FB3 /* Build configuration list for PBXNativeTarget "PhotoFunUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +700,7 @@
 				35E4B3871D56974F00086FB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

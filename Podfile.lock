@@ -1,0 +1,26 @@
+PODS:
+  - CMDQueryStringSerialization (0.4.1):
+    - ISO8601
+  - ISO8601 (0.6.0)
+  - ReactiveCocoa (4.2.1):
+    - Result (~> 2.0)
+  - Result (2.1.2)
+  - SimpleAuth/Core (0.3.9):
+    - CMDQueryStringSerialization
+    - ReactiveCocoa
+  - SimpleAuth/FoursquareWeb (0.3.9):
+    - SimpleAuth/Core
+
+DEPENDENCIES:
+  - SimpleAuth/FoursquareWeb
+
+SPEC CHECKSUMS:
+  CMDQueryStringSerialization: 4bb0a2f5e7d8d8678d911d88072274952cbef4e5
+  ISO8601: d3ea3ba9b752820cf92c6b47a9ee327e9f0e13fc
+  ReactiveCocoa: 5a42745f11ea236f405bb9ce5e97c5e3b23562dd
+  Result: 6e722d4a66b1408680dbfcdf51c0b1c4b706316a
+  SimpleAuth: bc7d594f90711a7e6ef7624dce5aa8c8b09770ab
+
+PODFILE CHECKSUM: a9756402c467985783c18630fd29ce191b8bf8ec
+
+COCOAPODS: 1.0.1

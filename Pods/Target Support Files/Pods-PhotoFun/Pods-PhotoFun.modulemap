@@ -1,0 +1,6 @@
+framework module Pods_PhotoFun {
+  umbrella header "Pods-PhotoFun-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -39,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SAMCache.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SimpleAuth-SimpleAuth.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,11 +57,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>063B08085384C6E75C76F0988F0BF73A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>0EA1AF77E281BFE665CC0031A7EFE6A5</key>
 		<dict>
 			<key>primary</key>
@@ -67,12 +67,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>109B71747239ACBCFCB126E74D064952</key>
+		<key>1B921AE4511426666900FF24A3486043</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>47FDAE1C4BAA14FA101A0C241ECC0CC8</key>
+		<key>226DDC9B0D4DA87E3B00188E0A8DAB89</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>52A9EFAB71A1898562E3C48DC60BD40D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>972CA55367F354CEC4B3CFFCABDC25A4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,12 +92,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AC78508B606DE55E588A790B991B3A7E</key>
+		<key>CE72D9C35B0C555C10BBDDCA053A9349</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C115EE16657229BB018EE881CE224409</key>
+		<key>DEB90784C31B2F580CFC28B37109A5B6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

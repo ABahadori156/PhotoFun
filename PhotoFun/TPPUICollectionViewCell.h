@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SAMCache/SAMCache.h>
 
 @interface TPPUICollectionViewCell : UICollectionViewCell
 

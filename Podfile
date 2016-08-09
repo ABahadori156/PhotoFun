@@ -6,6 +6,7 @@ target 'PhotoFun' do
    use_frameworks!
 
     pod 'SimpleAuth/FoursquareWeb'
+    pod ’SAMCache’
 
   # Pods for PhotoFun
 

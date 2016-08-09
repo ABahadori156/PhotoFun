@@ -45,10 +45,60 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="PhotoFun" id="XP8-sf-ldZ"/>
+                    <connections>
+                        <segue destination="9fs-bt-xsu" kind="presentation" identifier="showDetail" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="LPT-cB-mPh"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pbd-Vy-fKW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1307" y="434"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="FjM-r4-MXw">
+            <objects>
+                <viewController id="9fs-bt-xsu" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mj6-Ux-V9d"/>
+                        <viewControllerLayoutGuide type="bottom" id="SnA-pY-PmK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r6Z-S0-gnQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8nu-Wa-t0H">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ueD-bj-V5e">
+                                <rect key="frame" x="150" y="60" width="300" height="400"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3FV-BT-vvt">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="325"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyr-M4-cMx">
+                                        <rect key="frame" x="248" y="349" width="30" height="30"/>
+                                        <state key="normal" image="tips"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ueD-bj-V5e" firstAttribute="centerX" secondItem="r6Z-S0-gnQ" secondAttribute="centerX" id="jWt-aT-tKD"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="800"/>
+                    <connections>
+                        <outlet property="backgroundView" destination="8nu-Wa-t0H" id="ACR-Pe-GH2"/>
+                        <outlet property="centerView" destination="ueD-bj-V5e" id="7Ii-Ir-hdc"/>
+                        <outlet property="imageView" destination="3FV-BT-vvt" id="F8C-6g-VhF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9O4-sw-j30" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2120" y="434"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dKJ-cG-Dcs">
@@ -74,4 +124,7 @@
             <point key="canvasLocation" x="495" y="434"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tips" width="512" height="512"/>
+    </resources>
 </document>

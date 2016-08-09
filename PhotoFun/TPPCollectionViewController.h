@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <SimpleAuth/SimpleAuth.h>
+#import "PhotoController.h"
+#import "DetailViewController.h"
 
 // We're going to need to put the date and the format in lots of URLs across our app
 // So we will create a constant that we can us eelsewhere so we're not repeating ourselves. AKA extern

@@ -166,8 +166,33 @@ static NSString * const reuseIdentifier = @"Cell";
   
     
     [task resume];
-    
 }
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"showDetail"]) {
+        // What do we want to do?
+        // If the segue.identifier is equal to string showdetail..
+        
+        // We create an indexPath here and set it equal to the collection view index path for selected items at 0
+        
+        NSIndexPath *selectedPath = [self.collectionView indexPathsForSelectedItems] [0];
+        
+        // Then were going to create a dictionary called photo and we'll populate it with the venue array contents at that selectedpath.row
+        NSDictionary *photo = self.venueArray[selectedPath.row];
+        
+        DetailViewController *dvc = (DetailViewController *)segue.destinationViewController;
+        
+        dvc.photo = photo;
+        
+    }
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
+}
+
+
 
 /*
 #pragma mark - Navigation
@@ -182,13 +207,13 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
+
     return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
+
     return self.venueArray.count;
 }
 

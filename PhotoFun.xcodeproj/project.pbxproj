@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		350FBC471D5955D10047A43F /* PhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 350FBC461D5955D10047A43F /* PhotoController.m */; };
+		350FBC4A1D595EA90047A43F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 350FBC491D595EA90047A43F /* DetailViewController.m */; };
 		35E4B3571D56974F00086FB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E4B3561D56974F00086FB3 /* main.m */; };
 		35E4B35A1D56974F00086FB3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E4B3591D56974F00086FB3 /* AppDelegate.m */; };
 		35E4B3601D56974F00086FB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E4B35E1D56974F00086FB3 /* Main.storyboard */; };
@@ -45,6 +46,8 @@
 		3109959CFCF99BEE15B38ECC /* Pods-PhotoFunTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoFunTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoFunTests/Pods-PhotoFunTests.debug.xcconfig"; sourceTree = "<group>"; };
 		350FBC451D5955D10047A43F /* PhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoController.h; sourceTree = "<group>"; };
 		350FBC461D5955D10047A43F /* PhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoController.m; sourceTree = "<group>"; };
+		350FBC481D595EA90047A43F /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		350FBC491D595EA90047A43F /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		35E4B3521D56974F00086FB3 /* PhotoFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35E4B3561D56974F00086FB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35E4B3581D56974F00086FB3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,10 +127,12 @@
 		35E4B3541D56974F00086FB3 /* PhotoFun */ = {
 			isa = PBXGroup;
 			children = (
-				35E4B3581D56974F00086FB3 /* AppDelegate.h */,
-				35E4B3591D56974F00086FB3 /* AppDelegate.m */,
+				350FBC481D595EA90047A43F /* DetailViewController.h */,
+				350FBC491D595EA90047A43F /* DetailViewController.m */,
 				35E4B3881D56989100086FB3 /* TPPCollectionViewController.h */,
 				35E4B3891D56989100086FB3 /* TPPCollectionViewController.m */,
+				35E4B3581D56974F00086FB3 /* AppDelegate.h */,
+				35E4B3591D56974F00086FB3 /* AppDelegate.m */,
 				35E4B35E1D56974F00086FB3 /* Main.storyboard */,
 				35E4B38B1D56A7D900086FB3 /* TPPUICollectionViewCell.h */,
 				35E4B38C1D56A7D900086FB3 /* TPPUICollectionViewCell.m */,
@@ -459,6 +464,7 @@
 				35E4B35A1D56974F00086FB3 /* AppDelegate.m in Sources */,
 				35E4B3571D56974F00086FB3 /* main.m in Sources */,
 				350FBC471D5955D10047A43F /* PhotoController.m in Sources */,
+				350FBC4A1D595EA90047A43F /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

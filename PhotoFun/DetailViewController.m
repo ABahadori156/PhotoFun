@@ -28,6 +28,14 @@
     UITapGestureRecognizer *dismiss = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismiss)];
     [self.backgroundView addGestureRecognizer:dismiss];
     
+  
+    
+    
+    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeToDismiss)];
+    
+    // Here we added the swipe gesture to the entire view which means it will swipe anywhere you swipe on the view, not just on the backgroundView
+    // which is obscured by the centerView
+    [self.view addGestureRecognizer:swipe];
     
     // Here we round the corners of our center View
     self.centerView.layer.cornerRadius = 10;
@@ -37,10 +45,40 @@
     
 }
 
+-(void)swipeToDismiss{
+    // This will move the view 400 points to the right and no points up or down, making it a horizontal slide
+    
+    [UIView animateWithDuration:.75 animations:^{self.view.transform = CGAffineTransformMakeTranslation(400, 0); }
+                     completion:^(BOOL finished) {
+                         [self dismissViewControllerAnimated:YES completion:nil];
+                     }];
+    
+}
+
 // Function for viewController dismissal
 -(void)dismiss{
-    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    // This is a custom animation to make the view shrink size
+    // We lower the alpha so it fades out when dismissed
+    
+    // We'll leave the alpha here on this one, but we don't need a transform of any kind here
+    [UIView animateWithDuration:.75 animations:^{self.view.transform = CGAffineTransformMakeScale(.01, .01); self.view.alpha = 0;}
+                     completion:^(BOOL finished) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+     }];
 }
+
+
+-(void)dismissTips{
+    // This will get rid of just the tipsView not the entire detailView
+    [UIView animateWithDuration:.5 animations:^{self.tipView.alpha = 0;}
+                     completion:^(BOOL finished) {
+                         [self.tipView removeFromSuperview];
+                     }];
+    
+}
+
+
 
 -(void)downloadTips{
     // What information will you need to pass to the API to get our tips?
@@ -66,7 +104,8 @@
         // Create an array that will hold all the different text of all the tips
         
         NSArray *tipsArray = [responseDict valueForKeyPath:@"response.tips.items.text"];
-        NSLog(@"tipArray:%@", tipsArray);
+        
+        self.tipString = [self formatTips:tipsArray];
         
         
     }];
@@ -77,8 +116,40 @@
 
 //Method to format the tips we retrieved from the API to make it look nice for the user
 -(NSString *)formatTips:(NSArray*)tipsArray{
-    NSMutableString *tipsString = [[NSMutableString alloc] initWithString:@"Tips:\n\n"];
+    NSMutableString *tipString = [[NSMutableString alloc] initWithString:@"Tips:\n\n"];
+    
+    for (NSString *tip in tipsArray) {
+        // Take the mutableString tipString and as you iterate, append the string to the mutableString
+        [tipString appendString:[NSString stringWithFormat:@"*%@\n\n", tip]];
+    }
+    // Here we return the NSString version of our tipString
+    return (NSString*)tipString;
 }
+
+-(IBAction)presentTipView{
+    // Inside here we're going to alloc and init our tipView with the same frame as our centerView
+    self.tipView = [[UITextView alloc]initWithFrame:self.centerView.frame];
+    
+    self.tipView.backgroundColor = [UIColor orangeColor];
+    
+    self.tipView.textColor = [UIColor whiteColor];
+    
+    // Here we'll round the corners of our textView cause it would look silly if it shows up on top with sharp corners
+    self.tipView.layer.cornerRadius = 10;
+    
+    self.tipView.text = self.tipString;
+    
+    // Here we add a tapGesture to get rid of the tips text view when we tap on it
+    // We add it here because tipView was created in this presentTipView method
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissTips)];
+    [self.tipView addGestureRecognizer:tap];
+    
+    [self.view addSubview:self.tipView];
+    
+}
+
+
+
 
 /*
 #pragma mark - Navigation

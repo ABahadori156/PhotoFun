@@ -15,7 +15,7 @@
 @property (nonatomic) IBOutlet UIView *backgroundView;
 @property (nonatomic) IBOutlet UIView *centerView;
 @property (nonatomic) IBOutlet UITextView *tipView;
-
+@property (nonatomic) NSString *tipString;
 
 
 @end

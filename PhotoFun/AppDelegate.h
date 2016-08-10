@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+
+// Imported simpleAuth to the appDelegate
 #import <SimpleAuth/SimpleAuth.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
